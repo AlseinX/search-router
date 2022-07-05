@@ -1,0 +1,12 @@
+[package]
+name = "search-router"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.58"
+hyper = { version = "0.14.19", features = ["server", "runtime", "http1", "http2"] }
+tokio = { version = "1.19.2", features = ["macros", "rt-multi-thread"] }
+url = "2.2.2"
