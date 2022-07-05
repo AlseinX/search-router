@@ -1,0 +1,12 @@
+[Unit]
+Description=Routes search queries to proper search engines.
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/usr/local/search-router/search-router.pid
+ExecStart=/usr/local/search-router/search-router
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
